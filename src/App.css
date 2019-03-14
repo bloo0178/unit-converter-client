@@ -1,0 +1,78 @@
+
+/* Add consistent font; colors 
+
+font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif; 700
+*/
+
+.App {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-weight: 700;
+    padding: 2rem;
+}
+
+
+.About {
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.Input {
+    margin-top: 4rem;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.Result {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    display:flex;
+    justify-content: center;
+    text-align: center;
+    width: 50%;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+select, input, button { 
+    font-family: inherit;
+    width: 160px;
+    margin: 5px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+button {
+    border-radius: 3px;
+    border-width: 1px;
+    width: 80px;
+    outline: none;
+}
+
+#Clear {
+    background-color: lightcoral;
+}
+
+#Submit:hover, #Clear:hover {
+    background-color: gray; 
+    color:white;
+    transition: color .25s ease-in-out;
+}
+
