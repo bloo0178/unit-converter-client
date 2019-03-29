@@ -37,10 +37,8 @@ class App extends Component {
     } else if (this.state.inputUnit === "") {
       alert("Select a unit to convert.");
     } else {
-      //const query = this.state.inputQty + this.state.inputUnit;
-      //fetch(`http://192.168.1.10:5000/api/convert?input=${query}`)
       const input = this.state.inputQty + this.state.inputUnit;
-      fetch(`https://vo6hsgnzxc.execute-api.us-east-1.amazonaws.com/prod/convert?input=${input}`)
+      fetch(`https://831vuq5mha.execute-api.us-east-1.amazonaws.com/dev/?input=${input}`)
         .then(res => res.json())
         .then(res => {
           console.log(res);
